@@ -1,0 +1,16 @@
+{
+    "appGuid": "0f75b418-9d34-4e99-aa12-7859ae2ad25a",
+    "name": "MultiChannelDAQ",
+    "version": "1.0.0",
+    "author": "Opal Kelly Incorporated",
+    "summary": "FrontPanel MultiChannelDAQ Example App",
+    "description": "FrontPanel MultiChannelDAQ Example App",
+    "icon": { "source": "assets/images/multichanneldaq-app-logo.svg" },
+    "deviceBindings": [
+        { "name": "MultiChannelDAQ Device", "description": "MultiChannelDAQ Device" }
+    ],
+    "initialContentSize": {
+        "width": 1086,
+        "height": 750
+    }
+}

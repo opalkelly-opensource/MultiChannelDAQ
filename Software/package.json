@@ -1,0 +1,48 @@
+{
+  "name": "multichanneldaq-example-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "FrontPanel Platform MultiChannelDAQ Application",
+  "author": "Opal Kelly Inc.",
+  "license": "SEE LICENSE IN LICENSE",
+  "main": "index.js",
+  "scripts": {
+    "pack:dev": "webpack --config webpack.dev.js && node ./scripts/package-fpapp.js ./dist ./output/MultiChannelDAQ-dev.fpp",
+    "pack": "webpack --config webpack.prod.js &&  node ./scripts/package-fpapp.js ./dist ./output/MultiChannelDAQ.fpp",
+    "build:dev": "webpack --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
+    "start": "webpack serve --open --config webpack.dev.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@types/archiver": "^6.0.3",
+    "@types/node": "^22.13.2",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "archiver": "^7.0.1",
+    "copy-webpack-plugin": "^12.0.2",
+    "css-loader": "^7.1.2",
+    "html-webpack-plugin": "^5.6.3",
+    "style-loader": "^4.0.0",
+    "ts-loader": "^9.5.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.0",
+    "webpack-merge": "^6.0.1"
+  },
+  "dependencies": {
+    "@opalkelly/frontpanel-platform-api": "^6.0.0",
+    "@radix-ui/react-scroll-area": "^1.0.5",
+    "@radix-ui/react-select": "^2.0.0",
+    "@radix-ui/react-slider": "^1.1.2",
+    "@radix-ui/react-tooltip": "^1.0.7",
+    "chart.js": "^4.4.7",
+    "classnames": "^2.3.2",
+    "react": "^18.3.1",
+    "react-chartjs-2": "^5.3.0",
+    "react-dom": "^18.3.1",
+    "sub-events": "^1.9.0"
+  }
+}
